@@ -2,17 +2,21 @@
   "name": "csv_script",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "type": "commonjs",
+  "main": "readcsv.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx tsc & node ./dist/readcsv.js  "
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "csv": "^6.3.9"
+    "csv": "^6.3.9",
+    "dotenv": "^16.4.5",
+    "mongoose": "^8.4.1"
   },
   "devDependencies": {
-    "@types/node": "^20.14.2"
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
   }
 }
